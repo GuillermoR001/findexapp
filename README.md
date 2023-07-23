@@ -15,10 +15,8 @@ Prueba técnica para desarrollador Laravel, Laravel Framework ^9.0 y Laravel Nov
 
 Documentación oficial de [Laravel](https://laravel.com/docs) y [Laravel Nova](https://nova.laravel.com/docs/4.0/installation.html), [Vue Full Calendar](https://fullcalendar.io/docs/vue) y [v-onboarding](https://v-onboarding-docs.fatihsolhan.com/)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
 ## Desarrollo del punto 1
-Se ha desarrollado un apartado para la creación de los eventos para tener los puntos 1 y 2 se parados y dar una funcionalidad extra a la creación y manipulación del calendario.
+Se ha desarrollado un apartado para la creación de los eventos para tener los puntos 1 y 2 separados y dar una funcionalidad extra a la creación y manipulación del calendario.
 
 - Tabla de eventos agregados.
 ![grid](/public/images/event1.PNG)
