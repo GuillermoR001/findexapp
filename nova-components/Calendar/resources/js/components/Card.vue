@@ -31,10 +31,12 @@ export default {
       alert('date click! ' + arg.dateStr)
     },
     async getEvents(){
-      const response = await fetch("http://findexapp.test/api/calendar-events");      
-      const { events } = await response.json();
-      console.log(events)
-      this.calendarOptions.events = events
+       Nova.request().get("/nova-vendor/calendar/events")
+        .then(data => {
+          const { events } = data.data;
+          this.calendarOptions.events = events
+        });
+
     }
   },
   mounted(){

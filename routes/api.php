@@ -20,10 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/onboarding-steps', [OnboardingStepsController::class, 'onboardingSteps']);
-Route::get('/calendar-events', function(Request $request) {
-    $events = \App\Models\Event::select('title', 'start_date as date')->get();
 
-    return response()->json([
-        'events' => $events
-    ], 200);
-});

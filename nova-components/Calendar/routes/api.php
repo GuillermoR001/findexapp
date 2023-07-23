@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/endpoint', function (Request $request) {
 //     //
 // });
+Route::get('/events', function(Request $request) {
+    $events = \App\Models\Event::select('title', 'start_date as date')->get();
+
+    return response()->json([
+        'events' => $events
+    ], 200);
+});

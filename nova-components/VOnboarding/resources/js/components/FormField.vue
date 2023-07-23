@@ -103,10 +103,11 @@ export default defineComponent ({
   },
   methods : {
     async getSteps(){
-      const response = await fetch("http://findexapp.test/api/onboarding-steps");      
-      const { steps } = await response.json();
-      console.log(steps)
-      this.steps = steps;
+      Nova.request().get("/api/onboarding-steps")
+        .then(data => {
+          const { steps } = data.data;
+          this.steps = steps;
+        });
     }
   },
   mounted(){
